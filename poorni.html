@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<button id="stop">Stop sliding</button>
+
+<div id="flip">Click to slide down panel</div>
+<div id="panel">Hello world!
+    <div>This is Nandini</div>
+    <div> am learning java class in ISM university.</div>
+              <div>  <img width="320" src="C:\Users\Lenovo\Desktop\html\3.jpg"/></div>
+   
+    <div> I had completed my btech and i am searching for the job.</div>
+    <div> Artificial intelligence, Robotic process automation, Quatum computing, Edge computing, Internet of things.</div>
+            
+</div>
+
+</body>
+</html>
